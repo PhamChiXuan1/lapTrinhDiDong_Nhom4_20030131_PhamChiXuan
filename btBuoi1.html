@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<script>
+    console.log('coding challenge #1')
+
+    console.log('data1')
+    var mMarks = 78;
+    var hMarks = 1.69;
+    var mJohn = 92;
+    var hJohn = 1.95;
+    console.log(mMarks, hMarks, mJohn, hJohn)
+
+    function tinhBMI(mass, hight) {
+        return mass / (hight * hight);
+    }
+
+    MarksBMI = tinhBMI(mMarks, hMarks);
+    JohnBMI = tinhBMI(mJohn, hJohn);
+
+    var markHigherBMI = MarksBMI > JohnBMI;
+
+    console.log(`Marks BMI: ${MarksBMI.toFixed(2)}`);
+    console.log(`John BMI: ${JohnBMI.toFixed(2)}`);
+    console.log('Mark has a higher BMI than John: ' + markHigherBMI)
+
+
+    console.log('data2')
+
+    var mMarks2 = 95;
+    var hMarks2 = 1.88;
+    var mJohn2 = 85;
+    var hJohn2 = 1.76;
+    console.log(mMarks2, hMarks2, mJohn2, hJohn2)
+
+    MarksBMI2 = tinhBMI(mMarks2, hMarks2);
+    JohnBMI2 = tinhBMI(mJohn2, hJohn2);
+
+    var markHigherBMI2 = MarksBMI2 > JohnBMI2;
+
+    console.log(`Marks BMI: ${MarksBMI2.toFixed(2)}`);
+    console.log(`John BMI: ${JohnBMI2.toFixed(2)}`);
+    console.log('Mark has a higher BMI than John: ' + markHigherBMI2)
+
+    console.log('coding challenge #2')
+    if (MarksBMI > JohnBMI)
+        console.log('Mark BMI is higher than John!');
+    else
+        console.log('John BMI is higher than Mark');
+
+    if (MarksBMI > JohnBMI)
+        console.log('Mark BMI(' + `${MarksBMI.toFixed(1)}` + ') is higher than John(' + `${JohnBMI.toFixed(1)}` + ')!');
+    else
+        console.log('John BMI (' + `${JohnBMI.toFixed(1)}` + ') is higher than Mark(' + `${MarksBMI.toFixed(1)}` + ')!');
+
+    console.log('coding challenge #3')
+</script>
+
+<body>
+
+</body>
+
+</html>
